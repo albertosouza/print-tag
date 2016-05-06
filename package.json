@@ -1,0 +1,31 @@
+{
+  "name": "print-ticket",
+  "version": "1.0.0",
+  "description": "Simple module to print tickets",
+  "homepage": "",
+  "author": {
+    "name": "Alberto Souza",
+    "email": "alberto.souza.dev@gmail.com",
+    "url": "http://albertosouza.net"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "keywords": [
+    "ticket",
+    "tags",
+    "print"
+  ],
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3"
+  },
+  "repository": "albertosouza/print-ticket",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test/bootstrap.js test/**/*.test.js -b ",
+    "coverage": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -u exports -R spec test/bootstrap.js test/**/*.test.js"
+  },
+  "license": "MIT"
+}
