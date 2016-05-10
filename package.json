@@ -27,5 +27,8 @@
     "test": "./node_modules/.bin/mocha test/bootstrap.js test/**/*.test.js -b ",
     "coverage": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -u exports -R spec test/bootstrap.js test/**/*.test.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "pdfkit": "^0.7.2"
+  }
 }
