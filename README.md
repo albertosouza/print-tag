@@ -8,7 +8,7 @@
 
 TODO
 
-Whant something? Send here https://github.com/albertosouza/print-ticket/issues/1 in comments!
+Want something? Send here https://github.com/albertosouza/print-ticket/issues/1 in comments!
 
 
 ## Installation
