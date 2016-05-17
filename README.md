@@ -1,4 +1,4 @@
-# Print tags Node.js module
+# Print tags node.js module
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status](https://coveralls.io/repos/github/albertosouza/print-tag/badge.svg?branch=master)](https://coveralls.io/github/albertosouza/print-tag?branch=master)
 
