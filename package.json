@@ -1,8 +1,8 @@
 {
-  "name": "print-ticket",
-  "version": "0.0.0",
-  "description": "Simple module to print tickets",
-  "homepage": "",
+  "name": "print-tag",
+  "version": "1.0.0",
+  "description": "Simple module to generate PDF tags for print in comercial formats",
+  "homepage": "https://github.com/albertosouza/print-tag",
   "author": {
     "name": "Alberto Souza",
     "email": "alberto.souza.dev@gmail.com",
@@ -14,15 +14,16 @@
   "main": "lib/index.js",
   "keywords": [
     "ticket",
-    "tags",
+    "tag",
+    "userTag",
+    "pdf",
     "print"
   ],
   "devDependencies": {
     "istanbul": "^0.4.2",
-    "mocha": "^2.4.5",
-    "sinon": "^1.17.3"
+    "mocha": "^2.4.5"
   },
-  "repository": "albertosouza/print-ticket",
+  "repository": "albertosouza/print-tag",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/bootstrap.js test/**/*.test.js -b ",
     "coverage": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -u exports -R spec test/bootstrap.js test/**/*.test.js"

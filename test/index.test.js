@@ -1,72 +1,46 @@
 var assert = require('assert');
-var sinon = require('sinon');
 var PrintTicket = require('../lib');
 
 var fs = require('fs');
-var path = require('path');
 
-var data = [
-  {
-    name: 'Batman 0'
-  },
-  {
-    name: 'Batman 1'
-  },
-  {
-    name: 'Super Man 2'
-  },
-  {
-    name: 'Batman 3'
-  },
-  {
-    name: 'Super Man 4'
-  }  ,
-  {
-    name: 'Batman 5'
-  },
-  {
-    name: 'Super Man 6'
-  },
-  {
-    name: 'Batman 8'
-  },
-  {
-    name: 'Super Man 9'
-  },
-  {
-    name: 'Dead Poll 10'
-  }
-];
+var data = require('./names.json');
 
 describe('makeTickets', function () {
-  it('it should make 10 tickets', function(done) {
-    var pt = new PrintTicket();
+  it('it should make 85 tickets', function(done) {
+    var pt = new PrintTicket('pimaco_6187');
 
     pt.doc.pipe( fs.createWriteStream('test/results/output.pdf') );
-
-    pt.doc.fontSize(15);
-
-    // console.log('>>', path.resolve('test/results/1_test.pdf'))
+    pt.doc.fontSize(6);
 
     pt.makeTickets({
       count: data.length
-    }, function (i, x, y, next) {
-      // console.log('>>',data[i], data, i, data.length);
+    }, function (i, marginLeft, marginTop, size, next) {
 
-      pt.doc.text(data[i].name, x+2, x+30, { width: 410 });
+      pt.doc.text(data[i].name, marginLeft,  marginTop, size)
       // ticket box
-      pt.doc.rect(20, 20, 570, 150)
+      pt.doc.lineWidth(0.3);
+
+      pt.doc.rect(marginLeft, marginTop, size.width, size.height).stroke();
 
       next();
     }, function(){
-
       pt.doc.end();
-
-      // done();
     });
 
     pt.doc.on('end', function(){
       done();
     })
+  });
+
+  it('it should throw error if not find the format', function(done) {
+    var p;
+    try {
+      p = new PrintTicket();
+    } catch(e) {
+      assert(!p);
+      assert(e);
+      assert.equal(e.message, 'Unavaible or invalid tag page format');
+      done();
+    }
   });
 });
