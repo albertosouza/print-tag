@@ -44,9 +44,13 @@ pt.doc.on('end', function(){
 
 Please help with more formats in: https://github.com/albertosouza/print-tag/blob/master/lib/formats.js
 
-### Avaible:
+#### Avaible:
 
 - pimaco_6187
+
+## Example:
+
+![Page printed with tags in pimaco 6187 format ](https://wejs.org/api/v1/image/original/1463608565924_52206d50-1d43-11e6-8e29-4921a2f6138e.jpg)
 
 ## Authors
 
