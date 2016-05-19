@@ -1,8 +1,8 @@
-# Print tags node.js module
+# Print tags
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status](https://coveralls.io/repos/github/albertosouza/print-tag/badge.svg?branch=master)](https://coveralls.io/github/albertosouza/print-tag?branch=master)
 
-Simple module to print tickets / user tags
+Node.js module to generate PDFs in commercial tags formats and ready to print
 
 ## Installation
 
