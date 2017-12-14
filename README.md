@@ -47,6 +47,7 @@ Please help with more formats in: https://github.com/albertosouza/print-tag/blob
 #### Avaible:
 
 - pimaco_6187
+- pimaco_6180
 
 ## Example:
 
