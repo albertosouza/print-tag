@@ -20,8 +20,8 @@
     "print"
   ],
   "devDependencies": {
-    "istanbul": "^0.4.2",
-    "mocha": "^2.4.5"
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1"
   },
   "repository": "albertosouza/print-tag",
   "scripts": {
@@ -30,6 +30,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "pdfkit": "^0.7.2"
+    "pdfkit": "^0.8.3"
   }
 }
