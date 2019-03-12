@@ -13,7 +13,7 @@ npm install --save print-tag
 ## Usage
 
 ```js
-// See all avaible formats in: https://github.com/albertosouza/print-tag/blob/master/lib/formats.js 
+// See all avaible formats in: https://github.com/albertosouza/print-tag/blob/master/lib/formats.js
 var pt = new PrintTicket('pimaco_6187');
 // write in test/results/output.pdf , see PDFkit documentation
 pt.doc.pipe( fs.createWriteStream('test/results/output.pdf') );
@@ -57,6 +57,7 @@ Please help with more formats in: https://github.com/albertosouza/print-tag/blob
 
 - Alberto Souza: http://albertosouza.net
 - Thiago Anselmo: https://github.com/thiagoanselmo
+- Angelo Dias: https://github.com/angelod1as
 
 ## License
 
