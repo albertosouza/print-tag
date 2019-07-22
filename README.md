@@ -48,6 +48,8 @@ Please help with more formats in: https://github.com/albertosouza/print-tag/blob
 
 - pimaco_6187
 - pimaco_6180
+- pimaco_6081
+- pimaco_a4355
 
 ## Example:
 
@@ -57,7 +59,11 @@ Please help with more formats in: https://github.com/albertosouza/print-tag/blob
 
 - Alberto Souza: http://albertosouza.net
 - Thiago Anselmo: https://github.com/thiagoanselmo
+
+## Contributors
+
 - Angelo Dias: https://github.com/angelod1as
+- Luiza Avelino: https://github.com/luiza-avelino
 
 ## License
 
