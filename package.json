@@ -20,19 +20,22 @@
     "print"
   ],
   "devDependencies": {
-    "istanbul": "^0.4.5",
-    "mocha": "^6.2.0"
+    "mocha": "^11.8.0",
+    "nyc": "^18.0.0"
   },
   "repository": "albertosouza/print-tag",
   "scripts": {
-    "test": "./node_modules/.bin/mocha test/bootstrap.js test/**/*.test.js -b ",
-    "coverage": "./node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -u exports -R spec test/bootstrap.js test/**/*.test.js"
+    "test": "mocha test/bootstrap.js \"test/**/*.test.js\" -b",
+    "coverage": "nyc --reporter=text --reporter=html mocha test/bootstrap.js \"test/**/*.test.js\""
   },
   "license": "MIT",
+  "overrides": {
+    "serialize-javascript": "^7.0.7"
+  },
   "dependencies": {
-    "pdfkit": "^0.10.0"
+    "pdfkit": "^0.19.1"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=18.0.0"
   }
 }
